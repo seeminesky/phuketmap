@@ -21,13 +21,14 @@
 
 
 <script>
-  var map = L.map('map').setView([7.9783267,98.2670153],11);
+  var map = L.map('map').setView([7.9783267,98.2670153],9);
 
   mapLink ='<a href="http://openstreetmap.org"> NATTANICHA</a>';
 
 
 L.tileLayer(
-'http://openstreetmap.org/{z}/{x}/{y}.png', {
+'http://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', 
+{
   attribution: 'Map data &copy; ' + mapLink,
   maxZoom: 18,
 }).addTo(map);
