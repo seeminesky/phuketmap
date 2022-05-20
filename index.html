@@ -1,0 +1,151 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> 🌊 Phuket Map </title>
+</head>
+<body>
+
+<h1><center> 🌊 Phuket Tourist Map 🌊 </center></h1>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+
+<style>
+
+</style>
+
+
+<h1><center> 5 สถานที่ท่องเที่ยวในภูเก็ต </center></h1>
+<div id="map" style="width: 1420px; height: 600px"></div>
+
+
+<script>
+  var map = L.map('map').setView([7.9783267,98.2670153],11);
+
+  mapLink ='<a href="http://openstreetmap.org"> NATTANICHA</a>';
+
+
+L.tileLayer(
+'http://openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: 'Map data &copy; ' + mapLink,
+  maxZoom: 18,
+}).addTo(map);
+
+var greenIcon = L.icon({
+iconUrl: 'https://map.longdo.com/mmmap/images/pin_mark.png',
+
+iconSize: [38, 60], // size of the icon
+shadowSize: [50, 64], // size of the shadow
+iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+shadowAnchor: [4, 62], // the same for the shadow
+popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var marker = L.marker([7.7618317,98.30316],
+ {
+   icon: greenIcon,
+   draggable :true,
+   title: 'แหลมพรหมเทพ',
+   opacity:1.5
+ }
+)
+.addTo(map)
+.bindPopup("<b>แหลมพรรหมเทพ</b>")
+.openPopup();
+
+var greenIcon = L.icon({
+iconUrl: 'https://map.longdo.com/mmmap/images/pin_mark.png',
+
+iconSize: [38, 60], // size of the icon
+shadowSize: [50, 64], // size of the shadow
+iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+shadowAnchor: [4, 62], // the same for the shadow
+popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var marker = L.marker([7.8251463,98.3792199],
+ {
+   icon: greenIcon,
+   draggable :true,
+   title: 'จุดชมวิวเขาขาด',
+   opacity:1.5
+ }
+)
+.addTo(map)
+.bindPopup("<b>จุดชมวิวเขาขาด</b>")
+.openPopup();
+
+var greenIcon = L.icon({
+iconUrl: 'https://map.longdo.com/mmmap/images/pin_mark.png',
+
+iconSize: [38, 60], // size of the icon
+shadowSize: [50, 64], // size of the shadow
+iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+shadowAnchor: [4, 62], // the same for the shadow
+popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var marker = L.marker([7.8464847,98.3325895],
+ {
+   icon: greenIcon,
+   draggable :true,
+   title: 'วัดไชยธาราราม (วัดฉลอง) ',
+   opacity:1.5
+ }
+)
+.addTo(map)
+.bindPopup("<b>วัดไชยธาราราม (วัดฉลอง) </b>")
+.openPopup();
+
+var greenIcon = L.icon({
+iconUrl: 'https://map.longdo.com/mmmap/images/pin_mark.png',
+
+iconSize: [38, 60], // size of the icon
+shadowSize: [50, 64], // size of the shadow
+iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+shadowAnchor: [4, 62], // the same for the shadow
+popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var marker = L.marker([7.6024207,98.3576804],
+ {
+   icon: greenIcon,
+   draggable :true,
+   title: 'เกาะราชาใหญ่',
+   opacity:1.5
+ }
+)
+.addTo(map)
+.bindPopup("<b>เกาะราชาใหญ่ </b>")
+.openPopup();
+
+
+var greenIcon = L.icon({
+iconUrl: 'https://map.longdo.com/mmmap/images/pin_mark.png',
+
+iconSize: [38, 60], // size of the icon
+shadowSize: [50, 64], // size of the shadow
+iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+shadowAnchor: [4, 62], // the same for the shadow
+popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var marker = L.marker([7.7761093,98.2864983],
+ {
+   icon: greenIcon,
+   draggable :true,
+   title: 'แหลมกระทิง',
+   opacity:1.5
+ }
+)
+.addTo(map)
+.bindPopup("<b>แหลมกระทิง</b>")
+.openPopup();
+
+
+
+</script>
+
+</body>
+</html>
